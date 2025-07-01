@@ -9,7 +9,7 @@ void yyerror(const char *s) {
     fprintf(stderr, "Erro: %s\n", s);
 }
 
-// Estrutura de variável (mantida do compilador sem AST)
+// Estrutura de variável
 typedef struct vars {
     char name[50];
     char tipo[20];
@@ -21,6 +21,7 @@ typedef struct vars {
 
 VARS *listaVars = NULL;
 
+//insere na lista de variaveis
 VARS *ins(VARS *l, char n[]) {
     VARS *new = (VARS *)malloc(sizeof(VARS));
     strcpy(new->name, n);
@@ -29,6 +30,7 @@ VARS *ins(VARS *l, char n[]) {
     return new;
 }
 
+//busca variavel na lista
 VARS *srch(VARS *l, char n[]) {
     VARS *aux = l;
     while (aux != NULL) {
