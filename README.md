@@ -62,7 +62,6 @@ end
 ### 6. Operadores Lógicos e de Comparação
 
 - `>` `>=` `<` `<=` `==` `!=`
-- `||` `&&`
 
 ```buglang
 start
@@ -70,7 +69,7 @@ start
     var b
     a = 10
     b = 20
-    print(a < b && b > 15) // imprime 1 (true)
+    print(a < b) // imprime 1 (true)
 end
 ```
 
