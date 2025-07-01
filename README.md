@@ -104,28 +104,11 @@ end
 
 ## 🛠️ Como Compilar e Executar
 
-1. Gere o analisador léxico:
+Os arquivos necessario seram compilados dentro do Makefile, certifique que ele esteja dentro do diretorio junto dos
+outros arquivos. Com isso é só digitar 'make' no terminal para compilar e executar:
 
 ```bash
-flex BugLang.l
-```
-
-2. Gere o analisador sintático:
-
-```bash
-bison -d BugLang.y
-```
-
-3. Compile o código:
-
-```bash
-gcc BugLang.tab.c -o BugLang -lm
-```
-
-4. Execute com um arquivo `.bug`:
-
-```bash
-./BugLang
+make
 ```
 
 Certifique-se de que seu arquivo chamado `codigo_teste.bug` esteja presente no mesmo diretório.
