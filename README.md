@@ -42,7 +42,7 @@ start
     nome = "BugLang"
     print(nome)
 
-    print("Exemplo de string direta")
+    print("String direta")
     print(3 + 2 * 5) // Expressão
 end
 ```
@@ -54,7 +54,7 @@ start
     var x
     var y
     x = 4
-    y = x * (2 + 3) // y = 4 * 5 = 20
+    y = x * (2 + 3)
     print(y)
 end
 ```
