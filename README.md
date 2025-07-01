@@ -1,6 +1,6 @@
 # BugLang ++
 
-BugLang é uma linguagem de programação educacional com sintaxe simplificada, construída com Flex e Bison, que suporta estruturas básicas como variáveis, entrada e saída, expressões aritméticas, condicionais, laços e manipulação de strings. Agora, com suporte a Árvore de Sintaxe Abstrata (AST).
+BugLang é uma linguagem de programação educacional com sintaxe simplificada, construída com Flex e Bison, que suporta estruturas básicas como variáveis, entrada e saída, expressões aritméticas, condicionais, laços e manipulação de strings.
 
 ---
 
