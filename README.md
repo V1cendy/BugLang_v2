@@ -118,33 +118,58 @@ Certifique-se de que seu arquivo chamado `codigo_teste.bug` esteja presente no m
 ## 📁 Exemplo de código_teste.bug
 
 ```buglang
+/*
+Buglang
+compiladores
+ifce - aracati
+*/
+
 start
-    var nome
-    var idade
 
-    read(nome)
-    read(idade)
+//calculo de media de notas do IFCE
 
-    if (idade >= 18) {
-        print("Maior de idade")
+var nota1
+var nota2
+var nota3
+var nota4
+var media
+var N1
+var N2
+
+
+print("Digite a primeira nota:")
+read(nota1)
+print("Digite a segunda nota:")
+read(nota2)
+print("Digite a terceira nota:")
+read(nota3)
+print("Digite a quarta nota:")
+read(nota4)
+
+print("Digite o peso da N1:")
+read(N1)
+print("Digite o peso da N2:")
+read(N2)
+
+media = (N1*((nota1 + nota2)/2) + N2*((nota3 + nota4)/2))/5
+
+print("Média final:")
+print(media)
+
+if (media >= 7) {
+    print("Aluno aprovado!")
+} else {
+    if (media >= 5) {
+        print("Aluno em recuperação.")
     } else {
-        print("Menor de idade")
+        print("Aluno reprovado.")
     }
+}
 
-    print(nome)
 end
+
+
 ```
-
----
-
-## ℹ️ Observações
-
-- O tipo da variável é inferido na **primeira atribuição**.
-- As variáveis são armazenadas numa estrutura ligada (`VARS`).
-- O interpretador usa uma **Árvore de Sintaxe Abstrata (AST)** para processar comandos.
-- Strings podem ser impressas com ou sem variáveis.
-- A linguagem é sensível à sintaxe e exige `start` e `end` delimitando o programa.
-
 ---
 
 Desenvolvido por Victor Souza da Silva ✨
